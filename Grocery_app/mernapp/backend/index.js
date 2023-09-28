@@ -10,7 +10,7 @@ const connectToDB = require('./db');
 
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Allow requests from this origin
+    origin: 'http://localhost:3000', 'http://52.55.146.177' // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'], // Allow these headers
   })
@@ -28,6 +28,6 @@ app.use('/api', require("./Routes/DisplayData"));
 
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(5000, () => {
+  console.log('Server is running on port 5000');
 });
