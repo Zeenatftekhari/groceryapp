@@ -10,7 +10,7 @@ const connectToDB = require('./db');
 
 app.use(
   cors({
-    origin: 'http://localhost:3000', 'http://52.55.146.177' // Allow requests from this origin
+    origin:  'http://52.55.146.177' // Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'], // Allow these headers
   })
